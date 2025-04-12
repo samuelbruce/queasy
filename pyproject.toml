@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "queasy"
+version = "1.0"
+description = "."
+authors = ["Samuel Bruce <11494533+samuelbruce@users.noreply.github.com>"]
+license = "Unlicense"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+sqlparse = "0.5.3"
+
+[tool.poetry.group.dev.dependencies]
+sqlparse = "0.5.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
