@@ -3,7 +3,8 @@ import sqlparse
 
 
 class QueasyDB():
-    pass
+    def __init__(self, queries_path)
+        self.method_factory = QueasyMethodFactory(self, queries_path)
 
 
 class QueasyMethod():
@@ -81,9 +82,9 @@ class QueasyMethod():
 
 
 class QueasyMethodFactory():
-    def __init__(self, parent, sql_dir):
+    def __init__(self, parent, queries_path):
         self.parent = parent
-        sql_paths = list((Path(__file__).parent.absolute() / sql_dir).glob("*.sql"))
+        sql_paths = list((Path(__file__).parent.absolute() / queries_path).glob("*.sql"))
         for sql_path in sql_paths:
             self.attach_query(sql_path)
     
