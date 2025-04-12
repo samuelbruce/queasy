@@ -1,9 +1,10 @@
 
+from pathlib import Path
 import sqlparse
 
 
 class QueasyDB():
-    def __init__(self, queries_path)
+    def __init__(self, queries_path):
         self.method_factory = QueasyMethodFactory(self, queries_path)
 
 
